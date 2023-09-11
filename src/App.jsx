@@ -1,13 +1,12 @@
-// import { useState } from 'react'
-import './App.css'
+import Guest from './pages/Guest'
 
 function App() {
 
-  return (
-    <>
-      <h1 className='text-3xl font-bold underline'>Welcome to Nitflix</h1>
-    </>
-  )
+   return (
+      <>
+         <Guest/>
+      </>
+   )
 }
 
 export default App
