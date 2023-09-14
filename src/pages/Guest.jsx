@@ -1,3 +1,4 @@
+import Faq from '../components/FAQ'
 import previewImg from '../assets/preview.jpg'
 import phoneDownloadImg from '../assets/phone-download.png'
 import platformImg from '../assets/platform.jpg'
@@ -69,9 +70,7 @@ const Guest = () => {
             <hr className="border-4 border-zinc-800"/>
          </section>
          <section className="bg-black">
-               <div className="px-44">
-                  <h1 className="font-extrabold text-5xl text-center text-white pt-16 pb-10">Frequently Asked Questions</h1>
-               </div>
+            <Faq/>
             <hr className="border-4 border-zinc-800"/>
          </section>
       </>
