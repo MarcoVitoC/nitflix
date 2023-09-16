@@ -1,4 +1,5 @@
 import Faq from '../components/FAQ'
+import Footer from '../components/Footer'
 import previewImg from '../assets/preview.jpg'
 import phoneDownloadImg from '../assets/phone-download.png'
 import platformImg from '../assets/platform.jpg'
@@ -73,6 +74,7 @@ const Guest = () => {
             <Faq/>
             <hr className="border-4 border-zinc-800"/>
          </section>
+         <Footer/>
       </>
    )
 }
