@@ -31,41 +31,41 @@ const Guest = () => {
             <hr className="border-4 border-zinc-800"/>
          </header>
          <section className="bg-black">
-            <div className="flex items-center justify-between px-44 py-24">
-               <div className="text-white w-1/2">
-                  <h1 className="font-extrabold text-5xl">Enjoy on your TV</h1>
-                  <h6 className="font-normal text-2xl py-6">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h6>
+            <div className="flex flex-col items-center justify-between lg:flex-row mx-5 lg:mx-10 xl:mx-44 py-20">
+               <div className="text-white w-100 lg:w-1/2">
+                  <h1 className="font-bold lg:font-extrabold text-center lg:text-left text-3xl lg:text-5xl">Enjoy on your TV</h1>
+                  <h6 className="font-normal text-center lg:text-left text-lg lg:text-2xl py-6">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h6>
                </div>
-               <img src={previewImg} alt="Preview" width="600px"/>
+               <img className='max-w-full w-100 lg:w-1/2 h-auto' src={previewImg} alt="Preview" width="580px"/>
             </div>
             <hr className="border-4 border-zinc-800"/>
          </section>
          <section className="bg-black">
-            <div className="flex items-center justify-between px-44 py-24">
-               <img src={phoneDownloadImg} alt="Phone Download" width="500px"/>
-               <div className="text-white w-1/2">
-                  <h1 className="font-extrabold text-5xl">Download your shows to watch offline</h1>
-                  <h6 className="font-normal text-2xl py-6">Save your favorites easily and always have something to watch.</h6>
+            <div className="flex flex-col-reverse items-center justify-between lg:flex-row mx-5 lg:mx-10 xl:mx-44 py-20">
+               <img className='max-w-full w-100 lg:w-1/2 h-auto' src={phoneDownloadImg} alt="Phone Download" width="500px"/>
+               <div className="text-white w-100 lg:w-1/2">
+                  <h1 className="font-bold lg:font-extrabold text-center lg:text-left text-3xl lg:text-5xl">Download your shows to watch offline</h1>
+                  <h6 className="font-normal text-center lg:text-left text-lg lg:text-2xl py-6">Save your favorites easily and always have something to watch.</h6>
                </div>
             </div>
             <hr className="border-4 border-zinc-800"/>
          </section>
          <section className="bg-black">
-            <div className="flex items-center justify-between px-44 py-24">
-               <div className="text-white w-1/2">
-                  <h1 className="font-extrabold text-5xl">Watch everywhere</h1>
-                  <h6 className="font-normal text-2xl py-6">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h6>
+            <div className="flex flex-col items-center justify-between lg:flex-row mx-5 lg:mx-10 xl:mx-44 py-20">
+               <div className="text-white w-100 lg:w-1/2">
+                  <h1 className="font-bold lg:font-extrabold text-center lg:text-left text-3xl lg:text-5xl">Watch everywhere</h1>
+                  <h6 className="font-normal text-center lg:text-left text-lg lg:text-2xl py-6">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h6>
                </div>
-               <img src={platformImg} alt="Platform" width="580px"/>
+               <img className='max-w-full w-100 lg:w-1/2 h-auto' src={platformImg} alt="Platform" width="580px"/>
             </div>
             <hr className="border-4 border-zinc-800"/>
          </section>
          <section className="bg-black">
-            <div className="flex items-center justify-between px-44 py-20">
-               <img src={childrenImg} alt="Children" width="580px"/>
-               <div className="text-white w-1/2">
-                  <h1 className="font-extrabold text-5xl">Create profiles for kids</h1>
-                  <h6 className="font-normal text-2xl py-6">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h6>
+            <div className="flex flex-col-reverse items-center justify-between lg:flex-row mx-5 lg:mx-10 xl:mx-44 py-20">
+               <img className='max-w-full w-100 lg:w-1/2 h-auto' src={childrenImg} alt="Children" width="580px"/>
+               <div className="text-white w-100 lg:w-1/2">
+                  <h1 className="font-bold lg:font-extrabold text-center lg:text-left text-3xl lg:text-5xl">Create profiles for kids</h1>
+                  <h6 className="font-normal text-center lg:text-left text-lg lg:text-2xl py-6">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h6>
                </div>
             </div>
             <hr className="border-4 border-zinc-800"/>
