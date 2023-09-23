@@ -12,9 +12,9 @@ const Guest = () => {
             <div className='flex items-center justify-between mx-10 xl:mx-44 py-4'>
                <a className="text-4xl lg:text-5xl text-red-500 font-bold font-netflix-sans tracking-widest">NITFLIX</a>
                <div>
-                  <select className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded me-5 py-0.5 md:pe-16'>
-                     <option value="">🌐 Indonesian</option>
-                     <option value="" selected>🌐 English</option>
+                  <select defaultValue="English" className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded me-5 py-0.5 md:pe-16'>
+                     <option value="Indonesian">🌐 Indonesian</option>
+                     <option value="English">🌐 English</option>
                   </select>
                   <button className="rounded-md bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-4 py-1">Sign In</button>
                </div>

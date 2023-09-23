@@ -26,9 +26,9 @@ const Footer = () => {
                <p className="underline underline-offset-1 cursor-pointer">Legal Notices</p>
                <p className="underline underline-offset-1 cursor-pointer">Only on Netflix</p>
             </div>
-            <select className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded my-7 py-0.5 pe-16'>
-               <option value="">🌐 Indonesian</option>
-               <option value="" selected>🌐 English</option>
+            <select defaultValue="English" className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded my-7 py-0.5 pe-16'>
+               <option value="Indonesian">🌐 Indonesian</option>
+               <option value="English">🌐 English</option>
             </select>
             <p>Netflix Indonesia</p>
          </div>
