@@ -1,22 +1,22 @@
-import Faq from '../components/FAQ'
-import Footer from '../components/Footer'
-import previewImg from '../assets/preview.jpg'
-import phoneDownloadImg from '../assets/phone-download.png'
-import platformImg from '../assets/platform.jpg'
-import childrenImg from '../assets/children.png'
+import Faq from '../components/FAQ';
+import Footer from '../components/Footer';
+import previewImg from '../assets/preview.jpg';
+import phoneDownloadImg from '../assets/phone-download.png';
+import platformImg from '../assets/platform.jpg';
+import childrenImg from '../assets/children.png';
 
 const Guest = () => {
    return (
       <>
          <header className="w-full bg-guest-background bg-cover">
             <div className='flex items-center justify-between mx-10 xl:mx-44 py-4'>
-               <a className="text-4xl lg:text-5xl text-red-500 font-bold font-netflix-sans tracking-widest">NITFLIX</a>
+               <a className="text-4xl lg:text-5xl text-red-600 font-bold font-netflix-sans tracking-widest">NITFLIX</a>
                <div>
-                  <select defaultValue="English" className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded me-5 py-0.5 md:pe-16'>
+                  <select defaultValue="English" className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded me-5 py-1 md:pe-16'>
                      <option value="Indonesian">🌐 Indonesian</option>
                      <option value="English">🌐 English</option>
                   </select>
-                  <button className="rounded-md bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-4 py-1">Sign In</button>
+                  <a href='/login' className="rounded-md bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-4 py-1.5">Sign In</a>
                </div>
             </div>
             <div className='flex flex-col items-center justify-center text-center px-5 py-44 xl:p-44 pb-36'>
@@ -25,7 +25,7 @@ const Guest = () => {
                <p className='text-lg lg:text-xl text-white font-normal pb-2'>Ready to watch? Enter your email to create or restart your membership.</p>
                <div className='flex flex-col md:flex-row items-center'>
                   <input className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded m-2 p-3 pe-48' type="text" placeholder='Email address'/>
-                  <button className="text-2xl rounded bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-5 py-2.5">Get Started &gt;</button>
+                  <a href='/login' className="text-2xl rounded bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-5 py-2.5">Get Started &gt;</a>
                </div>
             </div>
             <hr className="border-4 border-zinc-800"/>
@@ -76,7 +76,7 @@ const Guest = () => {
          </section>
          <Footer/>
       </>
-   )
+   );
 }
 
-export default Guest
+export default Guest;

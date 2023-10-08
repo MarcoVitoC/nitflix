@@ -75,7 +75,7 @@ const Faq = () => {
          <p className='text-white text-center text-lg lg:text-xl mt-12 mb-2'>Ready to watch? Enter your email to create or restart your membership.</p>
          <div className='flex flex-col md:flex-row items-center justify-center'>
             <input className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded m-2 p-3 pe-48' type="text" placeholder='Email address'/>
-            <button className="text-2xl rounded bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-5 py-2.5">Get Started &gt;</button>
+            <a href='/login' className="text-2xl rounded bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-5 py-2.5">Get Started &gt;</a>
          </div>
       </div>
    )

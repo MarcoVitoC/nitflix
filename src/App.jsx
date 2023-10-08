@@ -1,4 +1,4 @@
-import Guest from './pages/Guest'
+import Guest from './pages/Guest';
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
       <>
          <Guest/>
       </>
-   )
+   );
 }
 
-export default App
+export default App;
