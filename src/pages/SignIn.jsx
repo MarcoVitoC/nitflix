@@ -3,7 +3,7 @@ const SignIn = () => {
    return (
       <>
          <header className="w-full bg-black border-b-2 border-zinc-500 md:border-none md:bg-guest-background bg-cover">
-            <div className='flex items-center justify-between ms-5 py-4'>
+            <div className='flex items-center justify-between ms-5 md:ms-10 py-4'>
                <a className="text-6xl text-red-600 font-bold font-netflix-sans tracking-widest">NITFLIX</a>
             </div>
             <div className="md:flex md:justify-center pb-24">
