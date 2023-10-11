@@ -30,7 +30,7 @@ const Footer = () => {
                <option value="Indonesian">🌐 Indonesian</option>
                <option value="English">🌐 English</option>
             </select>
-            <p>Netflix Indonesia</p>
+            <p>Nitflix Indonesia</p>
          </div>
       </section>
    )

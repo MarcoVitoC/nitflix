@@ -2,12 +2,12 @@
 const SignIn = () => {
    return (
       <>
-         <header className="w-full bg-guest-background bg-cover">
-            <div className='flex items-center justify-between mx-10 py-4'>
+         <header className="w-full bg-black border-b-2 border-zinc-500 md:border-none md:bg-guest-background bg-cover">
+            <div className='flex items-center justify-between ms-5 py-4'>
                <a className="text-6xl text-red-600 font-bold font-netflix-sans tracking-widest">NITFLIX</a>
             </div>
-            <div className="flex justify-center pb-24">
-               <div className='bg-black/70 flex flex-col max-w-md px-16 pt-16 pb-32'>
+            <div className="md:flex md:justify-center pb-24">
+               <div className='bg-black/70 flex flex-col px-9 pt-2 md:max-w-md md:px-16 md:pt-16 md:pb-32'>
                   <h1 className='text-3xl text-white font-semibold leading-normal mb-5'>Sign In</h1>
                   <input className='rounded my-2 p-3' type="text" placeholder='Email or phone number'/>
                   <input className='rounded my-2 p-3' type="text" placeholder='Password'/>
@@ -30,7 +30,6 @@ const SignIn = () => {
                <div className="grid grid-rows-6 lg:grid-rows-5 grid-cols-2 lg:grid-cols-4 gap-2">
                <p className="hover:underline cursor-pointer">FAQ</p>
                <p className="hover:underline cursor-pointer">Help Center</p>
-
                <p className="hover:underline cursor-pointer">Terms of Use</p>
                <p className="hover:underline cursor-pointer">Privacy</p>
                <p className="hover:underline cursor-pointer">Cookie Preferences</p>
