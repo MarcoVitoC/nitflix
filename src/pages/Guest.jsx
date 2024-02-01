@@ -16,7 +16,7 @@ const Guest = () => {
                      <option value="Indonesian">🌐 Indonesian</option>
                      <option value="English">🌐 English</option>
                   </select>
-                  <a href='/login' className="rounded-md bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-4 py-1.5">Sign In</a>
+                  <a href='/sign-in' className="rounded-md bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-4 py-1.5">Sign In</a>
                </div>
             </div>
             <div className='flex flex-col items-center justify-center text-center px-5 py-44 xl:p-44 pb-36'>
@@ -25,7 +25,7 @@ const Guest = () => {
                <p className='text-lg lg:text-xl text-white font-normal pb-2'>Ready to watch? Enter your email to create or restart your membership.</p>
                <div className='flex flex-col md:flex-row items-center'>
                   <input className='border border-zinc-500 bg-black/60 bg-opacity-80 text-white rounded m-2 p-3 pe-48' type="text" placeholder='Email address'/>
-                  <a href='/login' className="text-2xl rounded bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-5 py-2.5">Get Started &gt;</a>
+                  <a href='/sign-in' className="text-2xl rounded bg-red-600 hover:bg-red-700 active:bg-red-800 text-white px-5 py-2.5">Get Started &gt;</a>
                </div>
             </div>
             <hr className="border-4 border-zinc-800"/>
