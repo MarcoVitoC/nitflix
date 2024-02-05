@@ -13,7 +13,7 @@ const getMovieImage = (path) => {
 }
 
 const getMovieById = (id) => {
-   return `${baseUrl}/movie/${id}?api_key=${apiKey}&language=en-US`;
+   return `${baseUrl}/movie/${id}?api_key=${apiKey}`;
 }
 
 export { requests, getMovieImage, getMovieById };
