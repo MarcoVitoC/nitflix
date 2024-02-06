@@ -1,9 +1,14 @@
 import { useState } from 'react'
 
 const Faq = () => {
-   const [isOpen, setIsOpen] = useState(0)
+   const [isOpenFaq, setOpenStatus] = useState(new Array(7).fill(false));
    const handleToggle = (index) => {
-      setIsOpen(index === isOpen ? 0 : index);
+      setOpenStatus((faqStatus) => {
+         const faqs = [...faqStatus];
+         faqs[index] = !faqs[index];
+
+         return faqs;
+      });
    }
 
    return (
@@ -13,8 +18,8 @@ const Faq = () => {
          <details className="bg-zinc-800 mb-2 hover:bg-zinc-700 active:bg-zinc-600 cursor-pointer">
             <summary className="flex items-center justify-between text-white mb-2 px-6 pt-1" onClick={() => handleToggle(1)}>
                <p className='text-xl lg:text-2xl'>What is Nitflix?</p>
-               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpen === 1 ? '×' : '+'}</span>
-            </summary>
+               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpenFaq[1] ? '×' : '+'}</span>
+            </summary>nd
             <hr className="border border-black"/>
             <div>
                <p className="text-xl lg:text-2xl text-white mb-2 px-6 py-3">Nitflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. <br/><br/> You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There&apos;s always something new to discover and new TV shows and movies are added every week!</p>
@@ -24,7 +29,7 @@ const Faq = () => {
          <details className="bg-zinc-800 mb-2 hover:bg-zinc-700 active:bg-zinc-600 cursor-pointer">
             <summary className="flex items-center justify-between text-white mb-2 px-6 pt-1" onClick={() => handleToggle(2)}>
                <p className='text-xl lg:text-2xl'>How much does Nitflix cost?</p>
-               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpen === 2 ? '×' : '+'}</span>
+               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpenFaq[2] ? '×' : '+'}</span>
             </summary>
             <hr className="border border-black"/>
             <div>
@@ -34,7 +39,7 @@ const Faq = () => {
          <details className="bg-zinc-800 mb-2 hover:bg-zinc-700 active:bg-zinc-600 cursor-pointer">
             <summary className="flex items-center justify-between text-white mb-2 px-6 pt-1" onClick={() => handleToggle(3)}>
                <p className='text-xl lg:text-2xl'>Where can I watch?</p>
-               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpen === 3 ? '×' : '+'}</span>
+               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpenFaq[3] ? '×' : '+'}</span>
             </summary>
             <hr className="border border-black"/>
             <div>
@@ -44,7 +49,7 @@ const Faq = () => {
          <details className="bg-zinc-800 mb-2 hover:bg-zinc-700 active:bg-zinc-600 cursor-pointer">
             <summary className="flex items-center justify-between text-white mb-2 px-6 pt-1" onClick={() => handleToggle(4)}>
                <p className='text-xl lg:text-2xl'>How do I cancel?</p>
-               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpen === 4 ? '×' : '+'}</span>
+               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpenFaq[4] ? '×' : '+'}</span>
             </summary>
             <hr className="border border-black"/>
             <div>
@@ -54,7 +59,7 @@ const Faq = () => {
          <details className="bg-zinc-800 mb-2 hover:bg-zinc-700 active:bg-zinc-600 cursor-pointer">
             <summary className="flex items-center justify-between text-white mb-2 px-6 pt-1" onClick={() => handleToggle(5)}>
                <p className='text-xl lg:text-2xl'>What can I watch on Nitflix?</p>
-               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpen === 5 ? '×' : '+'}</span>
+               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpenFaq[5] ? '×' : '+'}</span>
             </summary>
             <hr className="border border-black"/>
             <div>
@@ -64,7 +69,7 @@ const Faq = () => {
          <details className="bg-zinc-800 mb-2 hover:bg-zinc-700 active:bg-zinc-600 cursor-pointer">
             <summary className="flex items-center justify-between text-white mb-2 px-6 pt-1" onClick={() => handleToggle(6)}>
                <p className='text-xl lg:text-2xl'>Is Nitflix good for kids?</p>
-               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpen === 6 ? '×' : '+'}</span>
+               <span className='text-5xl lg:text-6xl pb-2 font-thin'>{isOpenFaq[6] ? '×' : '+'}</span>
             </summary>
             <hr className="border border-black"/>
             <div>
