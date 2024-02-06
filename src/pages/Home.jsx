@@ -8,13 +8,13 @@ const Home = () => {
    const [trendingMovies, setTrendingMovies] = useState([]);
    const [upcomingMovies, setUpcomingMovies] = useState([]);
    const [selectedMovie, setNewSelectedMovie] = useState({});
-   const [trailerKey, setNewTrailerKey] = useState("0");
+   const [trailerKey, setNewTrailerKey] = useState(null);
+   const [isFetched, setFetchStatus] = useState(false);
 
    useEffect(() => {
       const fetchMovieData = async () => {
          await axios.get(requests.trendingMovies).then((response) => {
             setTrendingMovies(response.data.results);
-            setNewSelectedMovie(response.data.results[0]);
             fetchSelectedMovie(response.data.results[0].id);
          });
 
@@ -25,6 +25,8 @@ const Home = () => {
          await axios.get(requests.upcomingMovies).then((response) => {
             setUpcomingMovies(response.data.results);
          });
+
+         setFetchStatus(true);
       }
 
       fetchMovieData();
@@ -62,7 +64,7 @@ const Home = () => {
             </div>
          </header>
 
-         <Hero movie={selectedMovie} trailerKey={trailerKey}/>
+         {isFetched && <Hero movie={selectedMovie} trailerKey={trailerKey}/>}
 
          <div className="pb-5">
             <h3 className="text-2xl pl-2 pb-3">Trending Now</h3>
